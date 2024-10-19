@@ -1,0 +1,7 @@
+
+/* Add this to your CSS file */
+.custom-bullets {
+    list-style-type: disc; /* Use 'circle' or 'square' for different bullet styles */
+    padding-left: 1.5rem; /* Add some space to the left for the bullets */
+  }
+  
