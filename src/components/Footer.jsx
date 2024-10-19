@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import githubimg from "../images/github.png"
-import mailimg from "../images/mail.png"
-import youtubeimg from "../images/youtube.png"
-import instagramimg from "../images/instagram.png"
-import linkedinimg from "../images/linkedin.png"
-import twitterimg from "../images/twitter.png"
-
+import githubimg from "../images/github.png";
+import mailimg from "../images/mail.png";
+import youtubeimg from "../images/youtube.png";
+import instagramimg from "../images/instagram.png";
+import linkedinimg from "../images/linkedin.png";
+import twitterimg from "../images/twitter.png";
 
 const Footer = (props) => {
   const {
@@ -22,15 +21,16 @@ const Footer = (props) => {
   return (
     <div
       id="footer"
-      className={`flex flex-col items-center gap-10 py-20 bg-white w-screen`}
+      className="flex flex-col items-center gap-6 py-10 bg-white w-full"
     >
-      <div className="flex justify-center gap-10">
+      {/* Social Links */}
+      <div className="flex flex-wrap justify-center gap-6 md:gap-10">
         {email && (
           <a href={`mailto:${email}`}>
             <img
               src={mailimg}
               alt="email"
-              className="socialIcon h-10 w-10 transition-transform transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-white"
+              className="h-8 w-8 md:h-10 md:w-10 transition-transform transform hover:scale-110 hover:-translate-y-1"
             />
           </a>
         )}
@@ -44,11 +44,11 @@ const Footer = (props) => {
             <img
               src={githubimg}
               alt="GitHub"
-              className="h-10 w-10 socialIcon transition-transform transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-white"
+              className="h-8 w-8 md:h-10 md:w-10 transition-transform transform hover:scale-110 hover:-translate-y-1"
             />
           </a>
         )}
-        
+
         {instagram && (
           <a
             href={`https://www.instagram.com/${instagram}`}
@@ -58,11 +58,11 @@ const Footer = (props) => {
             <img
               src={instagramimg}
               alt="Instagram"
-              className="socialIcon h-10 w-10 transition-transform transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-white"
+              className="h-8 w-8 md:h-10 md:w-10 transition-transform transform hover:scale-110 hover:-translate-y-1"
             />
           </a>
         )}
-        
+
         {linkedIn && (
           <a
             href={`https://www.linkedin.com/in/${linkedIn}`}
@@ -72,7 +72,7 @@ const Footer = (props) => {
             <img
               src={linkedinimg}
               alt="LinkedIn"
-              className="socialIcon h-10 w-10 transition-transform transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-white"
+              className="h-8 w-8 md:h-10 md:w-10 transition-transform transform hover:scale-110 hover:-translate-y-1"
             />
           </a>
         )}
@@ -86,11 +86,11 @@ const Footer = (props) => {
             <img
               src={twitterimg}
               alt="Twitter"
-              className="socialIcon h-10 w-10 transition-transform transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-white"
+              className="h-8 w-8 md:h-10 md:w-10 transition-transform transform hover:scale-110 hover:-translate-y-1"
             />
           </a>
         )}
-        
+
         {youTube && (
           <a
             href={`https://www.youtube.com/c/${youTube}`}
@@ -100,13 +100,15 @@ const Footer = (props) => {
             <img
               src={youtubeimg}
               alt="YouTube"
-              className="socialIcon h-10 w-10 transition-transform transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-white"
+              className="h-8 w-8 md:h-10 md:w-10 transition-transform transform hover:scale-110 hover:-translate-y-1"
             />
           </a>
         )}
       </div>
-      <p className="mt-0 text-black text-sm">Created by {name}</p>
-      <p className="mt-0 text-black text-sm">Copyright © 2010-2024 </p>
+
+      {/* Footer Text */}
+      <p className="text-black text-xs md:text-sm">Created by {name}</p>
+      <p className="text-black text-xs md:text-sm">Copyright © 2010-2024</p>
     </div>
   );
 };
