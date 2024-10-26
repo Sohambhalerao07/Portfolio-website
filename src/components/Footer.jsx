@@ -21,7 +21,7 @@ const Footer = (props) => {
   return (
     <div
       id="footer"
-      className="flex flex-col items-center gap-6 py-10 bg-white w-full"
+      className="flex flex-col items-center gap-6 py-10 bg-white w-full rounded-lg"
     >
       {/* Social Links */}
       <div className="flex flex-wrap justify-center gap-6 md:gap-10">
@@ -65,7 +65,7 @@ const Footer = (props) => {
 
         {linkedIn && (
           <a
-            href={`https://www.linkedin.com/in/${linkedIn}`}
+            href={`https://www.linkedin.com/in/soham-bhalerao-4a754225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -108,7 +108,7 @@ const Footer = (props) => {
 
       {/* Footer Text */}
       <p className="text-black text-xs md:text-sm">Created by {name}</p>
-      <p className="text-black text-xs md:text-sm">Copyright © 2010-2024</p>
+      <p className="text-black text-xs md:text-sm">Copyright © 2023-2024</p>
     </div>
   );
 };
