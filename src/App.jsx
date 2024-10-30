@@ -1,11 +1,14 @@
 
 import React from 'react'
+import {useTypewriter,Cursor} from 'react-simple-typewriter'
 import Header from './components/Header'
 import './App.css'
 import Footer from './components/Footer'
 import Home from './components/Home'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+import Lottie from 'lottie-react'
+import Animation from "./assets/Animation - 1730101582138.json"
 
 
 const props={
@@ -25,11 +28,15 @@ function App() {
   
   return (
     <div id="main" style={fontStyle}>
+   
+    <div>
     <Header />
     <Home name={props.name} title={props.title} />
     <About />
     <Portfolio />
     <Footer {...props} />
+    </div>
+    
   </div>
     
   )
