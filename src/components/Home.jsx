@@ -36,7 +36,7 @@ const Home = ({ name = "" }) => {
            <span>{text}</span> <Cursor />
           </h3>
           <p className="text-white text-sm oxanium-font lg:text-base">
-            A student specializing in frontend development. With a strong foundation in technical and logical skills, I have experience building responsive and interactive web applications. I am passionate about creating seamless user experiences and constantly exploring new tools and technologies to enhance my expertise.
+            A  versitile student specializing in frontend development.With a strong foundation in technical and logical skills, I have experience building responsive and interactive web applications. I am passionate about creating seamless user experiences and constantly exploring new tools and technologies to enhance my expertise.
           </p>
           <button className="h-10 w-28 md:w-32 lg:w-40 rounded-xl bg-white mt-4 
             transition-all duration-300 ease-in-out oxanium-font
