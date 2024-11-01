@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Lottie from 'lottie-react';
 import Animation from "../assets/Animation - 1730100307629.json";
 
