@@ -5,9 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base:"/Portfolio-website/",
-  build: {
-    rollupOptions: {
-      external: ['react-simple-typewriter'],
-    },
-  }
 })
