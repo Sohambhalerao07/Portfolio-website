@@ -9,7 +9,7 @@ const imageAltText = "Soham Bhalerao";
 const Home = ({ name = "" }) => { 
   // Typing animation for roles
   const [text] = useTypewriter({
-    words: ['Frontend Developer', 'UI/UX Designer'],
+    words: ['BlockChain Enthusiast', 'UI/UX Designer','Frontend Developer],
     loop: true,
     delaySpeed: 2000, // Delay between each word in ms
   });
